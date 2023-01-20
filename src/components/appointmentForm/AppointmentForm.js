@@ -26,6 +26,7 @@ export const AppointmentForm = ({
         <input 
           type='text'
           id='title'
+          placeholder="Appointment Title"
           value={title}
           required
           onChange={(e) => setTitle(e.target.value)} />
