@@ -27,10 +27,10 @@ export const ContactForm = ({
         id="number"
         value={number}
         required
-        placeholder="Contact Number (111-2222-3333)"
+        placeholder="Contact Number (10 digits eg: 1234567890)"
         onChange={(e) => setNumber(e.target.value)}
-        // regex is for Chinese phone numbers
-        pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" />
+        // regex for phone number
+        pattern="[0-9]{10}" />
       <input 
         type='email' 
         id='email'
